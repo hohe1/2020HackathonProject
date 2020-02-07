@@ -1,0 +1,71 @@
+.midDiv{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-Between;
+}
+
+.midLeftDiv{
+  Width:24%;
+  display:flex;
+  
+}
+
+.midRightDiv{
+  Width:24%;
+  display:flex;
+}
+
+.midMidDiv{
+  Width:50%;
+  height:20vh;
+  text-align:center;
+
+}
+
+.botDiv{
+  text-align:center;
+}
+
+/* ------------------------- */
+
+.image{
+  width:100%
+  height:100%;
+}
+
+div{
+  border:solid 1px black;
+  
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+.credits  {
+  display: flex;
+  justify-content: center;
+}
+
+.completeHealth {
+  display: flex;
+  justify-content: center;
+}
+
+.midLeftDiv {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.midRightDiv {
+ 
+  display: flex;
+  justify-content: center;
+}
