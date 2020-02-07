@@ -13,7 +13,7 @@ let data =[
     picture:"https://via.placeholder.com/350x150",
     question:"You're out with the group and they pull out cigarettes and vapes, they ask you to hit it",
     choices:["You go for the Juul because you think it's less harmful","You say yes to the Cigarrette because you know its only tobacco","You decline because you now that's not the path you want to take"],
-    impact:[-5,-5,3],
+    impact:[-10,-15,3],
     nextQuestion:[3,4,5],
   },
   {
@@ -26,14 +26,55 @@ let data =[
   {
     picture:"https://via.placeholder.com/350x150",
     question:"Since you hit the juul, you now have a head rush",
-    choices:[""],
-    impact:[-1,-5,3],
+    choices:["Tell them you don't feel well","Ask them if what you're feeling is normal","Ignore it and keep juuling"],
+    impact:[3,3,-5],
     nextQuestion:[9,10,11],
   },
-  {},
-] 
+  {
+    picture:"https://via.placeholder.com/350x150",
+    question:"You begin coughing ucontrollably because of the cigarette ",
+    choices:["You leave telling them that you have to go somewhere","Keep taking hits of the cigarette",],
+    impact:[3,-5],
+    nextQuestion:[],
+  },
+  {
+    picture:"https://via.placeholder.com/350x150",
+    question:"They tell you that you're scary and pressure you to pick one to smoke",
+    choices:["Pick either one because you don't want to seem scary","You Run away"],
+    impact:[-5,3,1],
+    nextQuestion: [],
+  },
+  {
+    picture:"",
+    question:"They pressure you to hit it",
+    choices:["tell them angirly to stop ",],
+    impact:[],
+    nextQuestion:[],
+  },
+  {
+    picture:"",
+    question:"",
+    choices:["",],
+    impact:[],
+    nextQuestion:[],
+  },
+  {
+    picture:"",
+    question:"",
+    choices:["",],
+    impact:[],
+    nextQuestion:[],
+  },
+  {
+    picture:"",
+    question:"",
+    choices:["",],
+    impact:[],
+    nextQuestion:[],
+  },
+]
 
-let hp = 100
+let hp = 100;
 
 let twIndex = 0
 function typeWriter(){
@@ -46,7 +87,7 @@ function typeWriter(){
         twIndex++
         typeWriter()
       }
-    },50);
+    },25);
     
 }
 
@@ -55,9 +96,9 @@ function displayQuestions(){
   $(".button").show();
   
   if(data[index].choices.length < 4){
-      $(".choiceB2").hide();
-    if(data[index].choices.length < 3){
       $(".choiceB3").hide();
+    if(data[index].choices.length < 3){
+      $(".choiceB2").hide();
     }
   }
   
@@ -80,30 +121,30 @@ for(let i=0;i<4;i++){
     typeWriter()
 
 
-    //check for hp and replace health bar picture
-    if(hp<100 && hp >= 80){
-      $(".hpImg").attr("src","")
+    //check for hp and replace picture
+
+    
+    if(hp<99){
+      $(".hpImg").attr("src","https://www.pngkey.com/png/full/441-4414310_health-bar-exit-button-pixel-art.png")
+    }
+    if(hp<99 && hp >=75){
+      $(".hpImg").attr("src","https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FHealthBar75.png?v=1581118129277")
+    }
+    else if(hp<75 && hp >=50){
+      $(".hpImg").attr("src","https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FHealthBar50.png?v=1581117998851")
+    }
+     else if(hp<50 && hp >=25){
+      $(".hpImg").attr("src","https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FHealthBar25.png?v=1581118023720")
+    }
+    else if(hp<25 && hp >=0){
+      $(".hpImg").attr("src","https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FHealthBar0.png?v=1581118121052")
     }
     
-    else if(hp<80 && hp >=){
-      $(".hpImg").attr("src","https://lh3.googleusercontent.com/proxy/WcPzV_DTi3zvN7CnXU_nu1yki8FSSkwMP9R7xyIw2GMGYcqd2Ydaj4Gpia2gUJjBeit0Rh0tnB-jmzPpC6OoMjaiSIYGapTt")
-    }
-    else if(){
-      $(".hpImg").attr("src","")
-    }
-     else if(){
-      $(".hpImg").attr("src","")
-    }
     
   });
 }
-
-  
-displayQuestions();
-$(".paragraph").text("")
-twIndex = 0
-typeWriter()
-
-  
+  displayQuestions();
+  $(".paragraph").text("");
+  twIndex = 0
+  typeWriter();
 });
-

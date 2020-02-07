@@ -1,6 +1,7 @@
 body{
   display:flex;
   justify-content:center;
+  margin-top:15%;
 }
 
 .healthBar{
@@ -30,12 +31,17 @@ body{
 /*   border-radius:100%; */
   display:flex;
   justify-content:center;
+  
+/*   margin:5%; */
 
 }
 .botMidInnerDiv{
- 
-  width:250px;
-  height:250px;
+  display:flex;
+  justify-content:center;
+   width:75%;
+  overflow:scroll;
+/*   width:250px;
+  height:250px; */
 /*    px is not responsive ----------------------- */
 }
 .botLeftDiv{
@@ -57,11 +63,12 @@ body{
 
 .paragraph{
   overflow-wrap: break-word;
+/*   text-shadow:2px 2px 1px  pink; */
+
 }
 
 div{
     border:black solid 1px;
-
 
 }
 
@@ -72,7 +79,7 @@ div{
 .button:hover{
   animation-namw:changeColor;
   animation-duration: 2s;
-          box-shadow:2px 2px 15px  #FF5959;
+  text-shadow:2px 2px 1px  pink;
 
 
 }
