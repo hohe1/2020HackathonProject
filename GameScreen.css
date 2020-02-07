@@ -72,6 +72,8 @@ div{
 .button:hover{
   animation-namw:changeColor;
   animation-duration: 2s;
+          box-shadow:2px 2px 15px  #FF5959;
+
 
 }
 

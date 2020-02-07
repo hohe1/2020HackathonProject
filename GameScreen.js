@@ -11,7 +11,7 @@ let data =[
   },
   {
     picture:"https://via.placeholder.com/350x150",
-    question:"You're out with the group and they oull out cigarettes and vapes, they ask you to hit it",
+    question:"You're out with the group and they pull out cigarettes and vapes, they ask you to hit it",
     choices:["You go for the Juul because you think it's less harmful","You say yes to the Cigarrette because you know its only tobacco","You decline because you now that's not the path you want to take"],
     impact:[-5,-5,3],
     nextQuestion:[3,4,5],
