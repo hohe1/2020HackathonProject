@@ -109,10 +109,10 @@ function displayQuestions(){
   
 for(let i=0;i<4;i++){
   $(".choiceB"+i).click(function(){
-    index = data[index].nextQuestion[i]
     hp = hp + data[index].impact[i]
     console.log(hp)
-    
+    index = data[index].nextQuestion[i]
+
     // after clicking answer buttons
     
     displayQuestions();
@@ -124,7 +124,7 @@ for(let i=0;i<4;i++){
     //check for hp and replace picture
 
     
-    if(hp<99){
+    if(hp>=99){
       $(".hpImg").attr("src","https://www.pngkey.com/png/full/441-4414310_health-bar-exit-button-pixel-art.png")
     }
     if(hp<99 && hp >=75){
