@@ -1,6 +1,9 @@
+.topDiv {
+  background-color: pink;
+}
+
 .midDiv{
   display:flex;
-  flex-wrap:wrap;
   justify-content:space-Between;
 }
 
@@ -34,12 +37,13 @@
 }
 
 div{
-  border:solid 1px black;
+  
   
 }
 h1{
   display: flex;
   justify-content: center;
+  
 }
 
 h2{
@@ -58,14 +62,37 @@ h2{
 }
 
 .midLeftDiv {
-  height: 50px;
-  width: 50%;
+  height: 500px;
+  width: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+}
+
+.midMidDiv {
+  width: 50%;
+  height: 20vh;
+  text-align: center;
 }
 
 .midRightDiv {
- 
+  height: 450px;
+  width: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+}
+
+.midMidDiv {
+  font-family: Cambria;
+  font-size: 23px;
+}
+
+.instructions {
+  font-family: Cambria;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.buttonStart{
+  width:50%;
+  font-size:50px;
 }
