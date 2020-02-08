@@ -46,6 +46,7 @@ body{
 }
 .botLeftDiv{
   width:23%;
+  padding:1%;
 }
 
 .botRightDiv{
@@ -77,18 +78,18 @@ div{
 }
 
 .button:hover{
-  animation-namw:changeColor;
-  animation-duration: 2s;
+/*   animation-namw:changeColor;
+  animation-duration: 2s; */
   text-shadow:2px 2px 1px  pink;
 
 
 }
 
-@keyframes changeColor {
+/* @keyframes changeColor {
   from{
     background:default;
   }
   to{
     background:pink;
   }
-}
+} */
