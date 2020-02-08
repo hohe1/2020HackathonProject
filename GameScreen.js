@@ -28,7 +28,7 @@ let data =[
     picture:"https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FScreenshot%202020-02-07%20at%204.16.35%20PM.png?v=1581121015120",
     question:"Since you hit the juul, you now have a head rush.",
     choices:["Ask them if what you're feeling is normal","Ignore it and keep juuling"],
-    impact:[3,3,-5],
+    impact:[-3,-3,-5],
     nextQuestion:[6,7],
     //2a
   },
