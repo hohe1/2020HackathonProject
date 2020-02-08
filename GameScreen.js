@@ -13,7 +13,7 @@ let data =[
     picture:"https://calmatters.org/wp-content/uploads/sites/2/2018/09/41552544744_2ae2d565c6_o-e1536791053851.jpg?fit=794%2C529",
     question:"You're out with the group and they pull out cigarettes and vapes. Someone passes a vape to you and asks you if you want a hit.",
     choices:["You go for the Juul because you think it's less harmful","You say yes to the Cigarrette because you know its only tobacco","You decline because you now that's not the path you want to take"],
-    impact:[-10,-15,3],
+    impact:[-22,-35,3],
     nextQuestion:[3,4,5],
     //2
   },
@@ -63,7 +63,7 @@ let data =[
     nextQuestion:[],
   },
   {
-    picture:"",
+    picture:"https://cdn.glitch.com/6bec49b0-c740-4af8-809e-979aa297be0f%2FScreenshot%202020-02-07%20at%204.25.03%20PM.png?v=1581121553600",
     question:"After that you tell yourself you're never smoking again.",
     choices:[],
     impact:[0],
